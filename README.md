@@ -1,23 +1,33 @@
 # Oyun Tasarım ve Geliştirme Kulübü
 
-## Projenin amacı
-Bu proje, oyun tasarımı ve geliştirmeyle ilgilenen öğrenciler için kurgulanmış bir kampüs kulübü web sitesi örneğidir. HTML, CSS, Bootstrap ve JavaScript kullanır.
+Öğrencilerin oyun tasarımı ve geliştirme çalışmalarını tanıtan, üç sayfalı statik bir kulüp sitesi.
 
-## Sayfalar
-- `index.html`: Kulüp ana sayfası ve diğer sayfalara yönlendirmeler.
-- `etkinlikler.html`: Beş örnek etkinlik kartı ve başlığa göre arama özelliği.
-- `hakkimizda.html`: Kulübün amacı, vizyonu ve çalışma alanları.
-- `style.css`: Tüm sayfalarda kullanılan ortak tasarım.
-- `script.js`: Etkinlik başlıklarını filtreleme, sonuç sayacı, boş sonuç mesajı ve Temizle düğmesi.
+## Proje hakkında
+
+Site; kulübün etkinliklerini, çalışma alanlarını ve amacını tanıtır. HTML, CSS, Bootstrap ve JavaScript ile hazırlanmıştır. Ortak görünüm ve sayfaya özel tasarım kuralları `style.css` içinde tutulur.
+
+## Sayfalar ve özellikler
+
+- **Ana sayfa (`index.html`):** Kulüp tanıtımı, çalışma alanları ve etkinliklere yönlendirmeler.
+- **Etkinlikler (`etkinlikler.html`):** Örnek etkinlik kartları; başlığa göre arama, sonuç sayacı, eşleşme bulunamadı mesajı ve aramayı temizleme.
+- **Hakkımızda (`hakkimizda.html`):** Kulübün amacı, vizyonu ve çalışma alanları.
+- **`style.css`:** Üç sayfanın ortak renk paleti, tipografisi, kartları, butonları, responsive düzenleri ve animasyonları.
+- **`script.js`:** Etkinlik başlıklarına göre filtreleme ve arama arayüzünün güncellenmesi.
 
 ## Çalıştırma
-1. Proje klasörünü bilgisayarında aç.
-2. `index.html` dosyasını tarayıcıda aç veya Codespaces üzerinde bir önizleme yöntemi kullan.
-3. Bootstrap CDN ve Google Fonts kullanıldığı için bu kaynakların yüklenmesi sırasında internet bağlantısı gerekir.
-4. Etkinlikler sayfasında arama alanını, sonuç sayacını ve Temizle düğmesini dene.
 
-## Test ve AI notları
-Gerçek test sonuçlarını `TEST_NOTLARI.md` dosyasına yaz. AI desteğiyle ilgili kendi kullandığın prompt'ları ve kod açıklamalarını `AI_NOTLARI.md` içinde gözden geçirip kişiselleştir.
+Projeyi çalıştırmak için bir derleme adımı gerekmez. `index.html` dosyasını tarayıcıda açabilir veya proje klasöründe basit bir yerel sunucu başlatabilirsiniz:
 
-## GitHub repository
-Teslimden önce buraya kendi repository bağlantını ekle: `BURAYA_GITHUB_REPOSITORY_LINKI`
+```bash
+python3 -m http.server 8000
+```
+
+Ardından `http://localhost:8000` adresini açın. Bootstrap ve Google Fonts CDN kaynakları için internet bağlantısı gerekir.
+
+## Test kayıtları
+
+Tarayıcı, viewport, arama ve erişilebilirlik kontrollerinin girdileri ve sonuçları [`TEST_NOTLARI.md`](TEST_NOTLARI.md) dosyasında tutulur. Kullanılan AI prompt'ları ve çalışma notları [`AI_NOTLARI.md`](AI_NOTLARI.md) dosyasındadır.
+
+## Repository
+
+GitHub repository bağlantısı: https://github.com/sumeyyetvkc/Kamp-s_Kulubu_Proje
